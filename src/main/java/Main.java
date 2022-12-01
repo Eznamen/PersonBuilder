@@ -14,7 +14,7 @@ public class Main {
                 .name("Misha")
                 .build();
 
-        System.out.println("У " + person + " есть сын, " + son);
+        System.out.println(person + " has a son: " + son);
 
     }
 }

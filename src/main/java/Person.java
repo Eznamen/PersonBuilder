@@ -62,14 +62,6 @@ public class Person {
         return personBuilder;
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof Person)) return false;
-//        Person person = (Person) o;
-//        return age == person.age && Objects.equals(name, person.name) && Objects.equals(surname, person.surname) && Objects.equals(address, person.address);
-//    }
-
     @Override
     public int hashCode() {
         return Objects.hash(name, surname, age, address);
@@ -78,7 +70,7 @@ public class Person {
     @Override
     public String toString() {
 
-        return name + " " + surname + ", " + age + " y.o., address: " + address +". " ;
+        return name + " " + surname + ", " + age + " y.o., address: " + address +" " ;
 
     }
 }
