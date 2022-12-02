@@ -26,9 +26,9 @@ public class PersonBuilder {
 
     public Person build() {
         if ((name == null) || (surname == null)) {
-            throw new IllegalStateException( "пустое имя");
+            throw new IllegalStateException("Empty person");
         } else if (age> 121 || age < 0) {
-            throw new IllegalArgumentException("странный возраст");
+            throw new IllegalArgumentException("Age isn't normal");
         }
         return new Person(name, surname, age, address);
 
